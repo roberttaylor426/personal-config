@@ -16,7 +16,11 @@ zsh \
 oracle-java8-installer \
 nautilus-dropbox \
 git \
+autojump \
 sublime-text -y
+
+cd ~
+curl -L http://install.ohmyz.sh | sh
 
 sudo apt install ubuntu-make && umake android && umake ide idea
 
@@ -24,7 +28,7 @@ mkdir -p ~/Developer/repositories
 cd ~/Developer/repositories
 git clone git@github.com:roberttaylor426/custom-scripts.git
 git clone git@github.com:roberttaylor426/personal-config.git
-cp personal-config/{.zshrc,.gitconfig,.vimrc} ~/
+cp personal-config/{.zshrc,.gitconfig,.vimrc,.bash_aliases} ~/
 cp personal-config/.byobu/.tmux.conf ~/.byobu
 
 echo "Don't forget to install: Slack."
