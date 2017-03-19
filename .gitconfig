@@ -1,0 +1,13 @@
+[user]
+	name = Robert Taylor
+	email = robert.taylor426@gmail.com
+[color]
+	ui = true
+[alias]
+	co = checkout
+	st = status
+	cm = commit
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[push]
+	default = current
