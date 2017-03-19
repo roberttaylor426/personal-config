@@ -25,5 +25,6 @@ cd ~/Developer/repositories
 git clone git@github.com:roberttaylor426/custom-scripts.git
 git clone git@github.com:roberttaylor426/personal-config.git
 cp personal-config/{.zshrc,.gitconfig,.vimrc} ~/
+cp personal-config/.byobu/.tmux.conf ~/.byobu
 
 echo "Don't forget to install: Slack."
