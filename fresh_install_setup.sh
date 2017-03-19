@@ -20,5 +20,7 @@ sudo apt install ubuntu-make && umake android && umake ide idea
 mkdir -p ~/Developer/repositories
 cd ~/Developer/repositories
 git clone git@github.com:roberttaylor426/custom-scripts.git
+git clone git@github.com:roberttaylor426/personal-config.git
+cp personal-config/{.zshrc,.gitconfig,.vimrc} ~/
 
 echo "Don't forget to install: Slack."
