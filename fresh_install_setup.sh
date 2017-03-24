@@ -49,3 +49,4 @@ cp personal-config/{.zshrc,.gitconfig,.vimrc,.bash_aliases} ~/
 cp personal-config/.byobu/.tmux.conf ~/.byobu
 
 echo "Don't forget to install: Slack."
+echo "Don't forget to setup: VPN, Intellij coding styles."
