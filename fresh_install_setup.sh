@@ -38,7 +38,6 @@ sudo usermod -a -G docker robert
 cd ~
 curl -L http://install.ohmyz.sh | sh
 
-mkdir -p ~/Developer/tools
 mkdir -p ~/Developer/repositories
 cd ~/Developer/repositories
 git clone git@github.com:roberttaylor426/custom-scripts.git
@@ -47,5 +46,7 @@ cp -R custom-scripts ~/
 cp personal-config/{.zshrc,.gitconfig,.vimrc,.bash_aliases} ~/
 cp personal-config/.byobu/.tmux.conf ~/.byobu
 
-echo "Don't forget to install: Slack."
+mkdir -p ~/Developer/tools
+
+echo "Don't forget to install: IntelliJ, Slack."
 echo "Don't forget to setup: VPN, Intellij coding styles, Compiz config (Put, Disable Alt-F7, Alt-F1, Alt."
