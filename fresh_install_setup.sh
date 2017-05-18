@@ -38,8 +38,7 @@ sudo usermod -a -G docker robert
 cd ~
 curl -L http://install.ohmyz.sh | sh
 
-sudo apt install ubuntu-make && umake android && umake ide idea
-
+mkdir -p ~/Developer/tools
 mkdir -p ~/Developer/repositories
 cd ~/Developer/repositories
 git clone git@github.com:roberttaylor426/custom-scripts.git
