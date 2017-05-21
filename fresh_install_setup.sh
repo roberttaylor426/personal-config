@@ -1,29 +1,32 @@
 #!/usr/bin/env bash
 
+# Add PPAs
 sudo add-apt-repository ppa:webupd8team/java -y
 sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
-sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
 
 sudo apt update
 sudo apt upgrade
 
-sudo apt install vim \
-compiz compizconfig-settings-manager compiz-plugins-extra \
-indicator-multiload \
-chromium-browser \
-byobu \
-zsh \
-oracle-java8-installer \
-nautilus-dropbox \
-git \
-autojump \
-sublime-text \
+# Install packages
+sudo apt install \
 apt-transport-https \
+autojump \
+byobu \
 ca-certificates \
+chromium-browser \
+compiz compizconfig-settings-manager compiz-plugins-extra \
 curl \
+git \
+indicator-multiload \
+nautilus-dropbox \
+openvpn \
+oracle-java8-installer \
 software-properties-common \
-openvpn -y
+sublime-text \
+vim \
+-y
 
+# Install Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -35,9 +38,11 @@ sudo apt install docker-ce -y
 
 sudo usermod -a -G docker robert
 
+# Install zsh
 cd ~
 curl -L http://install.ohmyz.sh | sh
 
+# Install custom scripts and config
 mkdir -p ~/Developer/repositories
 cd ~/Developer/repositories
 git clone git@github.com:roberttaylor426/custom-scripts.git
