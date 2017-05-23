@@ -5,7 +5,7 @@ sudo add-apt-repository ppa:webupd8team/java -y
 sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
 
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
 
 # Install packages
 sudo apt install \
