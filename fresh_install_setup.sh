@@ -3,6 +3,7 @@
 # Add PPAs
 sudo add-apt-repository ppa:webupd8team/java -y
 sudo add-apt-repository ppa:webupd8team/sublime-text-2 -y
+sudo add-apt-repository ppa:peterlevi/ppa
 
 sudo apt update
 sudo apt upgrade -y
@@ -23,7 +24,9 @@ openvpn \
 oracle-java8-installer \
 software-properties-common \
 sublime-text \
+variety variety-slideshow \
 vim \
+zsh \
 -y
 
 # Install Docker
