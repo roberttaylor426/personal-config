@@ -41,6 +41,12 @@ sudo apt install docker-ce -y
 
 sudo usermod -a -G docker robert
 
+# Install Skype
+
+curl -O https://repo.skype.com/latest/skypeforlinux-64.deb
+sudo apt install ./skypeforlinux-64.deb
+rm skypeforlinux-64.deb
+
 # Install zsh
 cd ~
 curl -L http://install.ohmyz.sh | sh
@@ -56,5 +62,5 @@ cp personal-config/.byobu/.tmux.conf ~/.byobu
 
 mkdir -p ~/Developer/tools
 
-echo "Don't forget to install: IntelliJ, Slack."
+echo "Don't forget to install: CloudStation, IntelliJ, Slack."
 echo "Don't forget to setup: VPN, Intellij coding styles, Compiz config (Put, Disable Alt-F7, Alt-F1, Alt."
