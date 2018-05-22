@@ -42,7 +42,7 @@ sudo usermod -a -G docker robert
 # Install Skype
 
 curl -O https://repo.skype.com/latest/skypeforlinux-64.deb
-sudo apt install ./skypeforlinux-64.deb
+sudo apt install ./skypeforlinux-64.deb -y
 rm skypeforlinux-64.deb
 
 # Install zsh
