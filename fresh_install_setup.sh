@@ -18,7 +18,6 @@ compiz compizconfig-settings-manager compiz-plugins-extra \
 curl \
 git \
 indicator-multiload \
-nautilus-dropbox \
 openvpn \
 oracle-java8-installer \
 software-properties-common \
