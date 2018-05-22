@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.bash_aliases
 
-export PATH="/home/robert/custom-scripts:$PATH"
+export PATH="/home/robert/Developer/repositories/custom-scripts:$PATH"
 
 # Commands preceded by a space are not added to history (http://stackoverflow.com/questions/6475524/how-to-prevent-commands-to-show-up-in-bash-history)
 export HISTIGNORE=' *'
