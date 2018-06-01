@@ -18,6 +18,7 @@ compiz compizconfig-settings-manager compiz-plugins-extra \
 curl \
 git \
 indicator-multiload \
+nemo \
 openvpn \
 oracle-java8-installer \
 software-properties-common \
