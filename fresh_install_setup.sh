@@ -11,6 +11,7 @@ sudo apt upgrade -y
 sudo apt install \
 apt-transport-https \
 autojump \
+awscli \
 byobu \
 ca-certificates \
 chromium-browser \
