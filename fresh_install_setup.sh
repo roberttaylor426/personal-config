@@ -56,6 +56,7 @@ cd ~/Developer/repositories
 git clone git@github.com:roberttaylor426/custom-scripts.git
 git clone git@github.com:roberttaylor426/personal-config.git
 cp personal-config/{.zshrc,.gitconfig,.vimrc,.bash_aliases} ~/
+mkdir ~/.byobu
 cp personal-config/.byobu/.tmux.conf ~/.byobu/
 
 mkdir -p ~/Developer/tools
