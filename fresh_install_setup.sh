@@ -23,6 +23,7 @@ nemo \
 openvpn \
 oracle-java8-installer \
 software-properties-common \
+shutter \
 variety variety-slideshow \
 vim \
 zsh \
