@@ -63,4 +63,4 @@ cp personal-config/.byobu/.tmux.conf ~/.byobu/
 mkdir -p ~/Developer/tools
 
 echo "Don't forget to install: CloudStation, IntelliJ, Slack."
-echo "Don't forget to setup: VPN, Intellij coding styles, Compiz config (Put, Disable Alt-F7, Alt-F1, Alt."
+echo "Don't forget to setup: VPN, Intellij coding styles, Compiz config (Put, Disable Alt-F7, Alt-F1)"
