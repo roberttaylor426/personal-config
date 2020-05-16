@@ -17,6 +17,7 @@ ca-certificates \
 chromium-browser \
 compiz compizconfig-settings-manager compiz-plugins-extra \
 curl \
+fonts-powerline \
 git \
 indicator-multiload \
 nemo \
