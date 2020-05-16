@@ -5,7 +5,9 @@ export ZSH=/home/robert/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit"
+ZSH_THEME="spaceship"
+export SPACESHIP_DOCKER_SHOW=false
+export SPACESHIP_PACKAGE_SHOW=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +51,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump docker)
+plugins=(autojump docker aws)
 
 # User configuration
 
@@ -58,7 +60,7 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
   ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-ssh-add -l | grep "The agent has no identities" && ssh-add
+ssh-add -l | grep "The agent has no identities" && ssh-add && ssh-add ~/.ssh/gbc_rsa
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,7 +90,29 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.bash_aliases
 
-export PATH="/home/robert/Developer/repositories/custom-scripts:$PATH"
+export PATH="/home/robert/custom-scripts:/home/robert/go/bin:/home/robert/.local/bin:$PATH"
 
 # Commands preceded by a space are not added to history (http://stackoverflow.com/questions/6475524/how-to-prevent-commands-to-show-up-in-bash-history)
 export HISTIGNORE=' *'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+export ANDROID_HOME=/home/robert/Android/Sdk
+
+autoload bashcompinit
+bashcompinit
+source /home/robert/Developer/repositories/salvation-army/server-requests/atlas-http-completion.bash
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /home/robert/Developer/repositories/codurance/cazoo/finance-api/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/robert/Developer/repositories/codurance/cazoo/finance-api/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /home/robert/Developer/repositories/codurance/cazoo/finance-api/node_modules/tabtab/.completions/sls.zsh ]] && . /home/robert/Developer/repositories/codurance/cazoo/finance-api/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /home/robert/Developer/repositories/codurance/cazoo/finance-api/node_modules/tabtab/.completions/slss.zsh ]] && . /home/robert/Developer/repositories/codurance/cazoo/finance-api/node_modules/tabtab/.completions/slss.zsh
+source /home/robert/.npm-run.plugin.zsh/npm-run.plugin.zsh
