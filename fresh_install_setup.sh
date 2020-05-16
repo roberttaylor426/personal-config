@@ -27,6 +27,7 @@ software-properties-common \
 shutter \
 variety variety-slideshow \
 vim \
+vlc \
 zsh \
 -y
 
